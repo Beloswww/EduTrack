@@ -1,0 +1,21 @@
+# EDUTrack 的相依套件依「執行端」拆分為兩份，請依該台電腦的角色安裝：
+#
+#   控制端（跑 client_gui.py）：  pip install -r requirements-client.txt
+#   被監控端（跑 server.py）：    pip install -r requirements-server.txt
+#
+# 兩端共用：opencv-python、numpy、pynput
+# 被監控端另需系統層級的 FFmpeg（攝影機錄影合併音訊用）。
+#
+#
+# 註：socket、struct、threading、sqlite3、tkinter、csv、datetime
+#     等為 Python 標準函式庫，不需另外安裝。
+
+opencv-python
+numpy
+pyautogui
+pynput
+PyAudio
+Pillow
+requests
+pandas
+matplotlib
